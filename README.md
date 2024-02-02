@@ -1,1 +1,1 @@
-New Git Repo for practice Java script and Cypress
+# New Git Repo for practice Java script and Cypress
