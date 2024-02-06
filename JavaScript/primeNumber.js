@@ -1,9 +1,9 @@
-let number=6;
+let number=2;
 let flag=0;
 let middle=number/2;
 
 if(number==0||number==1){
-    console.log(`${number} is prime number`)
+    console.log(`${number} is not prime number`)
 }else{
 for(i=2;i<=middle;i++){
     if(number%i==0){

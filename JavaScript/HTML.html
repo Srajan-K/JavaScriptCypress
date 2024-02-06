@@ -3,13 +3,20 @@
 <head>
     <title>Java Script Practice</title>
 </head>
-<body>
+<body onload="load=true">
     <h1>This is my first HTML page</h1>
     <h2>Oops Concepts</h2>
     <h3>Abstraction</h3>
     <h3>Encapsulation</h3>
     <h3>Polymorphism</h3>
     <h3>Inheritence</h3>
+    <input type="button" name="Click Me" value="Click me to see loops" onclick="loops()"/>
+    <A HREF="javascript:void('')" onMouseOver="alert('You hoverd over me!');">
+        Mouse over me!
+        </A>
+    <form>
+        <input type="button" value="Click me to get some message" onclick="if(load==true) printOn();"/>
+    </form>
 </body>
 <script>
     //Variables
@@ -21,5 +28,42 @@
     const z=15;
     console.log(x+y+z)
     //number,string,null,boolean
+     var load=false;
+     function printOn(){
+            console.log(`Printing becasue load is true`)
+        }
+
+    function loops(){
+    console.log(`Im from for loop`)
+    for(var i=0;i<5;i++){
+        if(i==3){
+            continue
+        }
+        console.log(i)
+    }
+
+    console.log(`Im from while loop`)
+    var k=0
+    while(k<5){
+        if(k==2){
+            break
+        }
+        console.log(k)
+        k++
+    }
+
+    console.log(`Im from do while loop`)
+    l=0
+    do{
+        console.log(`this ${l}`)
+        l++
+    }while(l<3)
+
+    
+}
+var str="Hello World!"
+    console.log("This is to print "+str)
+</script>
+    
 </script>
 </html>
